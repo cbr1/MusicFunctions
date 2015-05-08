@@ -1,0 +1,102 @@
+% vi:set nowrap ts=4:
+%
+% $Id: master.tex 347 2006-02-25 23:00:42Z nicb $
+%
+% YOU MUST SET THESE VARIABLES BY HAND:
+%
+\newcommand{\imagedir}{./graphics}
+\newcommand{\macrodir}{./macros}
+%
+% THESE macros are MANDATORY in this style
+%
+\newcommand{\cpyear}{2006-2015}%		Copyright year(s)
+\newcommand{\cpholder}{Nicola Bernardini}%	Copyright Holder(s)
+\newcommand{\cpholderemailhidden}{nicb AT sme-ccppd DOT org}% Copyright Holder(s) e-mail(s) (hidden version)
+\newcommand{\cpholderemail}{nicb@sme-ccppd.org}% Copyright Holder(s) e-mail(s)
+%
+% Author: Nicola Bernardini <nicb@sme-ccppd.org>
+%
+% Copyright (c) 2006 Nicola Bernardini
+%
+% This work is licensed under the Creative Commons 
+% Attribution-ShareAlike License. To 
+% view a copy of this license, visit 
+% http://creativecommons.org/licenses/by-sa/2.5/ 
+% or send a letter to Creative Commons, 
+% 559 Nathan Abbott Way, Stanford, California 94305, USA.
+%
+% Some rights reserved.
+% SVNId : $Id: master.tex 347 2006-02-25 23:00:42Z nicb $
+%
+\documentclass{scrbook}
+\usepackage{graphicx,epsfig}
+\usepackage{hyperref}
+\usepackage{lastpage}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[british]{babel}
+\usepackage{amsmath}
+\usepackage{verbatim}
+% \usepackage{tpslifonts}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\usepackage{svninfo}
+\usepackage[Lenny]{fncychap}
+\usepackage{\macrodir/macros}
+\usepackage{\macrodir/ccnotice}
+
+\begin{document}
+\svnInfo $Id: master.tex 347 2006-02-25 23:00:42Z nicb $
+
+\frontmatter
+
+\author{Nicola Bernardini\\
+        \href{mailto:\cpholderemail}{\cpholderemailhidden}}
+\date{~}
+\lowertitleback{\copyrightnotice{\cpholder}{\cpholderemail}{\cpyear}}
+\uppertitleback{This book was set with
+     the help of {\KOMAScript} and {\LaTeX}}
+\title{Music Functions}
+\dedication{\itshape To those that help me understand music.}
+\publishers{\rcstag}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+
+\chapter*{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
+
+\mainmatter
+
+\chapter{Introduction}
+
+\input{introduction}
+
+\chapter{Archaic Functions}
+
+\chapter{Ritual Functions}
+
+\chapter{Speculative Functions}
+
+\chapter{Commercial Functions}
+
+\input{commercial}
+
+\chapter{Music Functions in Society}
+
+\input{society}
+
+\chapter{What's Next}
+
+\input{future}
+
+\chapter{Conclusions}
+
+\bibliographystyle{plain}
+\thebibliography{MusicFunctions}
+
+\backmatter
+
+\end{document}

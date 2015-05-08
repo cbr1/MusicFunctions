@@ -1,0 +1,28 @@
+%
+% Author: Nicola Bernardini <nicb@sme-ccppd.org>
+%
+% Copyright (c) 2004 Nicola Bernardini
+% Copyright (c) 2004 Conservatorio "C.Pollini", Padova
+%
+% This work is licensed under the Creative Commons 
+% Attribution-ShareAlike License. To 
+% view a copy of this license, visit 
+% http://creativecommons.org/licenses/by-sa/2.0/ 
+% or send a letter to Creative Commons, 
+% 559 Nathan Abbott Way, Stanford, California 94305, USA.
+%
+% Some rights reserved.
+% CVSId : $Id: ccnotice.sty 345 2006-02-19 22:28:55Z nicb $
+%
+\newcommand{\copyrightnotice}[3]
+{%
+	\begin{minipage}[t]{0.15\textwidth}
+		\includegraphics[width=1.45cm]{\imagedir/cc}
+	\end{minipage}
+	\begin{minipage}[t]{0.85\textwidth}
+		Copyright $\copyright$ {#3}\ {#1}\\$<$\href{mailto:#2}{#2}$>$\\
+		This work comes under the terms of the\\
+		Creative Commons $\copyright$ BY-SA 2.5 license\\
+		(\href{http://creativecommons.org/licenses/by-sa/2.5/}{http://creativecommons.org/licenses/by-sa/2.5/})
+	\end{minipage}
+}
